@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="CSS/tempo.css">
+        <title>Temporizador do Luquinhas</title>
+    </head>
+    <body>
+        <h1>Informe a quantidade de tempo de espera para começar</h1>
+        <div id="time">
+            <div id="inputs">
+                <div id="first_two_buttons">
+                    <input type="date" id="qty_date">
+                    <input type="time" id="qty_time" step="2">
+                    <input type="button" value="Iniciar" id="start_time" onclick="start(qty_time, qty_date)">
+                </div>
+                <br>
+                <div id="block">
+                    <p>Anos</p>
+                    <div id="show_time">
+                        <div id="years">0</div>
+                    </div>
+                </div>
+                <div id="block">
+                    <p>Meses</p>
+                    <div id="show_time">
+                        <div id="months">0</div>
+                    </div>
+                </div>
+                <div id="block">
+                    <p>Dias</p>
+                    <div id="show_time">
+                        <div id="days">0</div>
+                    </div>
+                </div>
+                <div id="block">
+                    <p>Horas</p>
+                    <div id="show_time">
+                        <div id="hours">0</div>
+                    </div>
+                </div>
+                <div id="block">
+                    <p>Minutos</p>
+                    <div id="show_time">
+                        <div id="minutes">0</div>
+                    </div>
+                </div>
+                <div id="block">
+                    <p>Segundos</p>
+                    <div id="show_time">
+                        <div id="seconds">0</div>
+                    </div>
+                </div>
+                <div id="last_two_buttons">
+                    <div id="pauses">
+                        <input type="button" value="Pausar" id="pause_time" onclick="pause()">
+                    </div>
+                    <div id="redo">
+                        <input type="button" value="Reiniciar" id="rerun_time" onclick="start(qty_time, qty_date)">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="tempo.js"></script>
+    </body>
+</html>

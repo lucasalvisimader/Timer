@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+}
+
+html {
+    background-image: linear-gradient(black, black, rgb(76, 0, 156), black, black);
+    background-image: url(background.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+}
+
+#time {
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+@font-face {
+    font-family: alarm clock;
+    src: url('alarm_clock.ttf');
+}
+
+#show_time {
+    font-family: alarm clock;
+    font-size: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    background-color: rgb(207, 9, 187);
+    border: 2px white solid;
+    margin: 3%;
+    padding: 3%;
+    width: 120%;
+}
+
+#block {
+    width: 10%;
+    display: inline-block;
+    color: white;
+    margin: 2%;
+}
+
+#seconds, #minutes, #hours, #days, #months, #years {
+    margin: 150%;
+    color: black;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    color-scheme: dark;
+    font-size: 4vh;
+    margin: 1%;
+    background-color: black;
+    border: white solid 1px;
+    border-radius: 5px;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+#first_two_buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#inputs {
+    width: 100vh;
+}
+
+#qty_time {
+    width: 30vh;
+}
+
+input[type=number]::placeholder {
+    color: rgb(153, 153, 153);
+}
+
+#last_two_buttons {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
